@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SOPBuilder | Turn procedures into a way of working</title>
+    <meta
+      name="description"
+      content="Create, run and improve standard operating procedures on your Windows computer. Local-first storage, checklists, evidence, versions and exports."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta
+      property="og:title"
+      content="SOPBuilder | Procedures you can actually follow"
+    />
+    <meta
+      property="og:description"
+      content="A local-first Windows workspace to write, execute and improve your SOPs."
+    />
+    <meta
+      property="og:image"
+      content="https://fguzman-stack.github.io/SOPBuilder-Web/assets/hero.png"
+    />
+    <meta
+      property="og:url"
+      content="https://fguzman-stack.github.io/SOPBuilder-Web/"
+    />
+    <link
+      rel="canonical"
+      href="https://fguzman-stack.github.io/SOPBuilder-Web/"
+    />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="./"
+          ><img
+            src="assets/icon.png"
+            alt=""
+            width="40"
+            height="40"
+          />SOPBuilder</a
+        >
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="desktop-link" href="#features" data-es="Funciones"
+            >Features</a
+          ><a class="desktop-link" href="#gallery" data-es="La aplicación"
+            >The app</a
+          ><a class="desktop-link" href="#faq">FAQ</a
+          ><button class="language" id="language" aria-label="Change language">
+            ES</button
+          ><a class="btn" href="#download" data-es="Conocer la licencia"
+            >Explore the license</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="dot"></span
+                ><span data-es="Menos improvisación. Más claridad."
+                  >Less guesswork. More clarity.</span
+                >
+              </p>
+              <h1
+                data-es="Lo que sabes,<br>una forma clara<br>de <em>trabajar.</em>"
+              >
+                What you know,<br />a clear way<br />to <em>work.</em>
+              </h1>
+              <p
+                class="lead"
+                data-es="Convierte el conocimiento de tu negocio en procedimientos que puedas seguir, comprobar y mejorar. Un espacio de escritorio, con tus datos en tu equipo."
+              >
+                Turn your business knowledge into procedures you can follow,
+                check and improve. A desktop workspace, with your data on your
+                computer.
+              </p>
+              <div class="actions">
+                <a class="btn" href="#gallery" data-es="Mira cómo funciona ↗"
+                  >See how it works ↗</a
+                ><a
+                  class="btn secondary"
+                  href="guide.html"
+                  data-es="Leer la guía"
+                  >Read the guide</a
+                >
+              </div>
+              <p
+                class="micro"
+                data-es="Windows 10/11 · Datos locales · Cinco idiomas · Versión 0.3.0"
+              >
+                Windows 10/11 · Local data · Five languages · Version 0.3.0
+              </p>
+            </div>
+            <aside
+              class="hero-note"
+              aria-label="Illustrative workflow, not an app screenshot"
+            >
+              <div class="note-top">
+                <span>SOP / 001</span
+                ><span data-es="Del conocimiento a la acción"
+                  >From knowledge to action</span
+                >
+              </div>
+              <div
+                class="note-title"
+                data-es="Una buena rutina<br>merece un buen proceso."
+              >
+                A good routine<br />deserves a good process.
+              </div>
+              <div class="note-step">
+                <span class="step-num">1</span
+                ><span data-es="Escribe qué hay que hacer"
+                  >Write what needs to happen</span
+                >
+              </div>
+              <div class="note-step">
+                <span class="step-num">2</span
+                ><span data-es="Guía cada paso y decisión"
+                  >Guide every step and decision</span
+                >
+              </div>
+              <div class="note-step">
+                <span class="step-num">3</span
+                ><span data-es="Comprueba y mejora el resultado"
+                  >Check and improve the result</span
+                >
+              </div>
+              <div
+                class="note-label"
+                data-es="UN PROCESO CLARO, UNA COSA MENOS EN TU CABEZA"
+              >
+                A CLEAR PROCESS, ONE LESS THING TO REMEMBER
+              </div>
+            </aside>
+          </div>
+          <div class="shot-wrap reveal">
+            <img
+              src="assets/hero.png"
+              alt="SOPBuilder procedure library with realistic example procedures"
+              width="1600"
+              height="900"
+              fetchpriority="high"
+            />
+          </div>
+          <p
+            class="caption"
+            data-es="Interfaz real de SOPBuilder con procedimientos de ejemplo. No son datos de clientes."
+          >
+            Real SOPBuilder interface with example procedures. No customer data.
+          </p>
+          <div class="facts">
+            <div class="fact">
+              <strong data-es="18 plantillas">18 templates</strong
+              ><span data-es="Un punto de partida concreto"
+                >A practical starting point</span
+              >
+            </div>
+            <div class="fact">
+              <strong data-es="7 tipos de paso">7 step types</strong
+              ><span data-es="Acciones, decisiones y evidencia"
+                >Actions, decisions and evidence</span
+              >
+            </div>
+            <div class="fact">
+              <strong data-es="5 idiomas">5 languages</strong
+              ><span>EN · ES · PT · FR · DE</span>
+            </div>
+            <div class="fact">
+              <strong data-es="Local primero">Local first</strong
+              ><span data-es="Tu espacio vive en tu equipo"
+                >Your workspace lives on your computer</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-es="Un proceso de principio a fin">
+                A process from start to finish
+              </p>
+              <h2 data-es="No solo un documento.<br>Una guía para hacerlo.">
+                Not just a document.<br />A guide to getting it done.
+              </h2>
+            </div>
+            <p
+              data-es="Para profesionales, pequeños negocios y responsables de operaciones que necesitan dejar de explicarlo todo desde cero."
+            >
+              For independent professionals, small businesses and operations
+              leads who need to stop explaining everything from scratch.
+            </p>
+          </div>
+          <div class="features">
+            <article class="feature">
+              <span class="number">01 / WRITE</span>
+              <h3 data-es="Empieza con algo útil">
+                Start with something useful
+              </h3>
+              <p
+                data-es="Crea desde cero o adapta una de 18 plantillas. Añade instrucciones, responsables, tiempos y criterios para saber cuándo está bien hecho."
+              >
+                Start from scratch or adapt one of 18 templates. Add
+                instructions, owners, time estimates and criteria for a job done
+                well.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="number">02 / RUN</span>
+              <h3 data-es="Sigue el proceso, paso a paso">
+                Follow the process, step by step
+              </h3>
+              <p
+                data-es="Checklists obligatorias, rutas sí/no, temporizadores y evidencia. Pausa y retoma una ejecución sin perder el contexto."
+              >
+                Required checklists, yes/no routes, timers and evidence. Pause
+                and resume a run without losing the context.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="number">03 / IMPROVE</span>
+              <h3 data-es="Conserva lo que funcionó">Keep what worked</h3>
+              <p
+                data-es="Publica versiones, revisa cambios y compara tiempos. Cada ejecución conserva una copia del procedimiento que siguió."
+              >
+                Publish versions, review changes and compare timings. Every run
+                keeps a copy of the procedure it followed.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="number">04 / SHARE</span>
+              <h3 data-es="Llévalo al formato que necesitas">
+                Take it to the format you need
+              </h3>
+              <p
+                data-es="Exporta PDF, DOCX, Markdown, HTML, JSON o paquetes con adjuntos. El HTML es un archivo autónomo de lectura, no un portal alojado."
+              >
+                Export PDF, DOCX, Markdown, HTML, JSON or packages with
+                attachments. HTML is a standalone read-only file, not a hosted
+                portal.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="number">05 / ASSIST</span>
+              <h3 data-es="Ayuda opcional, bajo tu control">
+                Optional help, under your control
+              </h3>
+              <p
+                data-es="Usa tu proveedor de IA o un modelo local con Ollama. La IA remota requiere tu propia clave y saldo; revisas cada borrador antes de guardarlo."
+              >
+                Use your own AI provider or a local model with Ollama. Remote AI
+                requires your own key and balance; review each draft before
+                saving.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="number">06 / TRANSCRIBE</span>
+              <h3 data-es="De una explicación a un borrador">
+                From explanation to draft
+              </h3>
+              <p
+                data-es="Transcribe audio localmente con Whisper.cpp tras descargar el motor y un modelo. Revisa la transcripción: la precisión depende del audio y del equipo."
+              >
+                Transcribe audio locally with Whisper.cpp after downloading the
+                engine and a model. Review the transcript: accuracy depends on
+                the audio and computer.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section dark" id="privacy">
+        <div class="container story">
+          <div>
+            <p class="eyebrow" data-es="Tu conocimiento, tu equipo">
+              Your knowledge, your computer
+            </p>
+            <h2 data-es="Trabaja localmente.<br>Comparte con intención.">
+              Work locally.<br />Share intentionally.
+            </h2>
+            <p
+              data-es="Los procedimientos y sus adjuntos se guardan en tu ordenador. La web de licencias no recibe tus SOPs. Las integraciones de IA y Drive son opcionales y necesitan tu autorización."
+            >
+              Procedures and attachments are stored on your computer. The
+              licensing website does not receive your SOPs. AI and Drive
+              integrations are optional and need your authorization.
+            </p>
+            <a
+              class="btn secondary"
+              href="privacy.html"
+              data-es="Cómo cuidamos tus datos ↗"
+              >How we handle your data ↗</a
+            >
+          </div>
+          <ul class="privacy-points">
+            <li
+              data-es="Sin telemetría incorporada en la app. El canje inicial requiere Internet."
+            >
+              No built-in app telemetry. Initial redemption requires internet.
+            </li>
+            <li
+              data-es="Respaldos con AES-256-GCM. La base SQLite local no está cifrada."
+            >
+              AES-256-GCM backups. The local SQLite database is not encrypted.
+            </li>
+            <li
+              data-es="Transcripción local: el audio no se envía a un servicio de voz."
+            >
+              Local transcription: audio is not sent to a speech service.
+            </li>
+            <li
+              data-es="Google Drive personal y manual. La conexión pública está pendiente de la configuración y verificación de Google."
+            >
+              Personal, manual Google Drive sync. Public connectivity is pending
+              Google configuration and verification.
+            </li>
+            <li
+              data-es="Sin edición simultánea, permisos de equipo ni colaboración en la nube."
+            >
+              No simultaneous editing, team permissions or cloud collaboration.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-es="Dentro de SOPBuilder">
+                Inside SOPBuilder
+              </p>
+              <h2 data-es="Mira el espacio<br>donde todo toma forma.">
+                See the workspace<br />where it comes together.
+              </h2>
+            </div>
+            <p
+              data-es="Capturas de la aplicación real, con ejemplos preparados para mostrar su funcionamiento. Pulsa para ampliar."
+            >
+              Screenshots from the real app, with examples prepared to show how
+              it works. Select an image to enlarge.
+            </p>
+          </div>
+          <div class="gallery">
+            <figure>
+              <img
+                src="assets/feature-1.png"
+                alt="Procedure editor with steps and instructions"
+                width="1600"
+                height="900"
+                loading="lazy"
+                tabindex="0"
+              />
+              <figcaption
+                data-es="01 · Escribe un procedimiento<span>Organiza instrucciones, checklists y criterios verificables.</span>"
+              >
+                01 · Write a procedure<span
+                  >Organize instructions, checklists and verifiable
+                  criteria.</span
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/feature-2.png"
+                alt="Step-by-step execution with a required checklist"
+                width="1600"
+                height="900"
+                loading="lazy"
+                tabindex="0"
+              />
+              <figcaption
+                data-es="02 · Ejecuta con contexto<span>Sigue los pasos y registra lo que se completó.</span>"
+              >
+                02 · Execute with context<span
+                  >Follow the steps and record what was completed.</span
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/feature-3.png"
+                alt="Template library with daily operation procedures"
+                width="1600"
+                height="900"
+                loading="lazy"
+                tabindex="0"
+              />
+              <figcaption
+                data-es="03 · Adapta una plantilla<span>18 procedimientos de partida en cinco idiomas.</span>"
+              >
+                03 · Adapt a template<span
+                  >18 starting procedures in five languages.</span
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/feature-4.png"
+                alt="Activity records with completed procedure runs"
+                width="1600"
+                height="900"
+                loading="lazy"
+                tabindex="0"
+              />
+              <figcaption
+                data-es="04 · Revisa las ejecuciones<span>Consulta los tiempos y el historial de actividad.</span>"
+              >
+                04 · Review your runs<span
+                  >Check timings and the activity history.</span
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="download">
+        <div class="container pricing">
+          <div>
+            <p class="eyebrow" data-es="Una licencia, tu espacio">
+              One license, your workspace
+            </p>
+            <h2 data-es="Una herramienta diaria.<br>Un pago único.">
+              An everyday tool.<br />A one-time purchase.
+            </h2>
+            <p
+              class="lead"
+              data-es="Licencia personal para un usuario en Windows. Los procedimientos no tienen un límite comercial impuesto: la capacidad depende del equipo y el almacenamiento disponible."
+            >
+              A personal license for one Windows user. No commercial cap on
+              procedures: capacity depends on your computer and available
+              storage.
+            </p>
+            <p
+              class="notice"
+              data-es="Propuesta AppSumo pendiente de aprobación. No hay una oferta activa ni se aceptan pagos en esta web. No afirmamos ser un socio aprobado de AppSumo."
+            >
+              AppSumo proposal pending approval. There is no live offer and this
+              website does not accept payments. We do not claim to be an
+              approved AppSumo partner.
+            </p>
+            <p
+              class="micro"
+              data-es="Windows x64 · Instalador y portable · Ejecutables sin firma Authenticode: Windows puede mostrar SmartScreen."
+            >
+              Windows x64 · Installer and portable · Executables are not
+              Authenticode-signed: Windows may show SmartScreen.
+            </p>
+          </div>
+          <div class="price-card">
+            <div class="price-top">
+              <strong>SOPBuilder personal</strong
+              ><span class="badge" data-es="PROPUESTA">PROPOSAL</span>
+            </div>
+            <div class="price">
+              $39
+              <small data-es="USD · pago único propuesto"
+                >USD · proposed one-time price</small
+              >
+            </div>
+            <p
+              class="micro"
+              data-es="Un código · Un usuario · Sin apilar códigos"
+            >
+              One code · One user · No code stacking
+            </p>
+            <ul class="price-list">
+              <li data-es="Editor y ejecuciones de SOPs">
+                SOP editor and procedure runs
+              </li>
+              <li data-es="18 plantillas y cinco idiomas">
+                18 templates and five languages
+              </li>
+              <li data-es="Historial, evidencia y exportaciones">
+                History, evidence and exports
+              </li>
+              <li data-es="Respaldos cifrados con contraseña">
+                Password-encrypted backups
+              </li>
+              <li data-es="Actualizaciones de las funciones incluidas">
+                Updates to included features
+              </li>
+            </ul>
+            <a
+              class="btn"
+              href="https://github.com/fguzman-stack/SOPBuilder-Web/releases/latest"
+              data-es="Descargas y verificaciones ↗"
+              >Downloads and checksums ↗</a
+            >
+            <p
+              class="micro"
+              data-es="Necesitas una licencia válida para usar la edición distribuida. IA remota y servicios de terceros no incluidos. Ediciones futuras distintas no prometidas."
+            >
+              A valid license is required to use the distributed edition. Remote
+              AI and third-party services are not included. Separate future
+              editions are not promised.
+            </p>
+            <a
+              href="terms.html"
+              class="micro"
+              data-es="Leer los términos de licencia"
+              >Read the license terms</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-es="Antes de empezar">Before you start</p>
+              <h2 data-es="Lo importante, sin letra pequeña.">
+                The important things, plainly.
+              </h2>
+            </div>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary data-es="¿Funciona sin Internet?">
+                Does it work without internet?
+              </summary>
+              <p
+                data-es="El canje inicial requiere Internet. Después de importar una licencia firmada, las funciones locales funcionan sin conexión; al iniciar con conexión se comprueba si la licencia fue revocada."
+              >
+                Initial redemption requires internet. After importing a signed
+                license, local features work offline; a connected startup checks
+                whether the license has been revoked.
+              </p>
+            </details>
+            <details>
+              <summary data-es="¿Qué sistemas e idiomas admite?">
+                Which systems and languages are supported?
+              </summary>
+              <p
+                data-es="Windows 10 y 11 de 64 bits. Interfaz y plantillas en español, inglés, portugués, francés y alemán; no se ofrece una versión oficial para macOS o Linux."
+              >
+                64-bit Windows 10 and 11. Interface and templates in Spanish,
+                English, Portuguese, French and German; there is no official
+                macOS or Linux edition.
+              </p>
+            </details>
+            <details>
+              <summary data-es="¿La IA está incluida?">Is AI included?</summary>
+              <p
+                data-es="Las funciones de integración están incluidas, pero la IA remota necesita tu cuenta, clave y saldo propios. Ollama necesita instalación y un modelo local compatible."
+              >
+                The integration features are included, but remote AI needs your
+                own account, key and balance. Ollama needs installation and a
+                compatible local model.
+              </p>
+            </details>
+            <details>
+              <summary data-es="¿Puede trabajar un equipo al mismo tiempo?">
+                Can a team work simultaneously?
+              </summary>
+              <p
+                data-es="No: es un espacio local para un usuario, sin edición en tiempo real ni roles en la nube. Puedes compartir exportaciones; los comentarios y revisiones son locales."
+              >
+                No: this is a local workspace for one user, without real-time
+                editing or cloud roles. You can share exports; comments and
+                reviews are local.
+              </p>
+            </details>
+            <details>
+              <summary data-es="¿Mis datos están cifrados?">
+                Is my data encrypted?
+              </summary>
+              <p
+                data-es="La base SQLite local no está cifrada: el bloqueo de la app no protege frente al acceso a los archivos de Windows. Los respaldos con contraseña sí usan AES-256-GCM; Drive no añade cifrado de extremo a extremo a la sincronización."
+              >
+                The local SQLite database is not encrypted: app locking does not
+                prevent access to Windows files. Password-protected backups use
+                AES-256-GCM; Drive sync does not add end-to-end encryption.
+              </p>
+            </details>
+            <details>
+              <summary
+                data-es="¿Puedo recuperar y exportar mis procedimientos?"
+              >
+                Can I recover and export my procedures?
+              </summary>
+              <p
+                data-es="Puedes exportar PDF, DOCX, Markdown, HTML, JSON y paquetes con adjuntos, y restaurar respaldos cifrados. Conserva la contraseña del respaldo: no podemos recuperarla."
+              >
+                Export PDF, DOCX, Markdown, HTML, JSON and packages with
+                attachments, and restore encrypted backups. Keep your backup
+                password: we cannot recover it.
+              </p>
+            </details>
+            <details>
+              <summary
+                data-es="¿Qué cubre la licencia y cómo pido un reembolso?"
+              >
+                What does the license cover, and how do refunds work?
+              </summary>
+              <p
+                data-es="La propuesta cubre uso personal y actualizaciones de las funciones incluidas, no servicios externos ni futuras ediciones diferentes. Si la oferta se aprueba, los reembolsos de AppSumo se tramitan con AppSumo según la ventana de la oferta (habitualmente 60 días), y la licencia reembolsada se revoca."
+              >
+                The proposal covers personal use and updates to included
+                features, not external services or separate future editions. If
+                approved, AppSumo refunds are handled through AppSumo under the
+                offer's window (usually 60 days), and refunded licenses are
+                revoked.
+              </p>
+            </details>
+            <details>
+              <summary data-es="¿Cómo solicito ayuda?">
+                How do I get help?
+              </summary>
+              <p
+                data-es="Escribe a familiazv2016@gmail.com con la versión de Windows y una descripción del problema. No publiques códigos, licencias, contraseñas ni contenido confidencial; todavía no se promete un plazo de respuesta garantizado."
+              >
+                Email familiazv2016@gmail.com with your Windows version and a
+                description of the problem. Do not publish codes, licenses,
+                passwords or confidential content; no guaranteed response time
+                is currently promised.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="container story">
+          <div>
+            <p class="eyebrow" data-es="Construido con intención">
+              Built with intention
+            </p>
+            <h2 data-es="El conocimiento no debería<br>depender de la memoria.">
+              Knowledge shouldn't<br />depend on memory.
+            </h2>
+          </div>
+          <div>
+            <p
+              data-es="SOPBuilder es desarrollado por Francisco Guzmán, en Santiago, Chile. El proyecto busca convertir explicaciones repetidas en procedimientos claros que se pueden comprobar en la práctica."
+            >
+              SOPBuilder is developed by Francisco Guzmán in Santiago, Chile.
+              The project aims to turn repeated explanations into clear
+              procedures that can be checked in practice.
+            </p>
+            <p
+              data-es="La versión 0.3.0 es una primera versión funcional. El enfoque es local: controlar qué se guarda, qué se exporta y cuándo intervienen servicios externos. Los límites conocidos se documentan, no se ocultan."
+            >
+              Version 0.3.0 is an initial functional release. The focus is
+              local: control what is saved, what is exported and when outside
+              services are involved. Known limits are documented, not hidden.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="support">
+        <div class="container">
+          <div class="support-card">
+            <div>
+              <p class="eyebrow" data-es="Estamos del otro lado">
+                We're on the other side
+              </p>
+              <h2 data-es="¿Tu proceso necesita una mano?">
+                Need a hand with your process?
+              </h2>
+              <p
+                data-es="Consulta la guía o escribe al desarrollador. Describe el problema sin compartir información confidencial de tu negocio."
+              >
+                Read the guide or contact the developer. Describe the issue
+                without sharing confidential business information.
+              </p>
+            </div>
+            <a
+              class="btn"
+              href="mailto:familiazv2016@gmail.com?subject=SOPBuilder%20support"
+              data-es="Contactar soporte ↗"
+              >Contact support ↗</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 SOPBuilder · Francisco Guzmán · Santiago, Chile</p>
+        <div class="footer-links">
+          <a href="privacy.html" data-es="Privacidad">Privacy</a
+          ><a href="terms.html" data-es="Términos">Terms</a
+          ><a href="guide.html" data-es="Guía">Guide</a
+          ><a href="mailto:familiazv2016@gmail.com" data-es="Soporte"
+            >Support</a
+          >
+        </div>
+      </div>
+    </footer>
+    <dialog id="lightbox" class="lightbox">
+      <button id="close-lightbox" aria-label="Close image">
+        Close / Cerrar ×</button
+      ><img id="lightbox-image" alt="" />
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Privacy | SOPBuilder</title>
+    <meta
+      name="description"
+      content="How SOPBuilder handles local records, optional integrations and license redemption."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="./"
+          ><img
+            src="assets/icon.png"
+            alt=""
+            width="40"
+            height="40"
+          />SOPBuilder</a
+        ><a href="mailto:familiazv2016@gmail.com">Support / Soporte</a>
+      </div>
+    </header>
+    <main class="legal">
+      <p class="eyebrow">YOUR INFORMATION / TUS DATOS</p>
+      <h1>Privacy policy<br />Política de privacidad</h1>
+      <p>
+        Effective: October 14, 2026. Controller: Francisco Guzmán, Santiago,
+        Chile. Contact:
+        <a href="mailto:familiazv2016@gmail.com">familiazv2016@gmail.com</a>.
+      </p>
+      <h2>1. Local application data / Datos locales</h2>
+      <p>
+        Your SOPs, execution records and attachments stay in your Windows user
+        profile unless you explicitly export them or use an optional
+        integration. SOPBuilder does not include telemetry or send this content
+        to the activation service. The local SQLite database is not encrypted;
+        app locking is not a substitute for Windows account security or disk
+        encryption. Password-protected backups use AES-256-GCM.
+      </p>
+      <p>
+        Los SOPs, ejecuciones y adjuntos permanecen en tu perfil de Windows
+        salvo que los exportes o uses una integración opcional. No se envían al
+        servicio de activación. La base SQLite no está cifrada; el bloqueo de la
+        app no sustituye la protección de Windows ni el cifrado del disco. Los
+        respaldos con contraseña usan AES-256-GCM.
+      </p>
+      <h2>2. Website hosting / Alojamiento web</h2>
+      <p>
+        The website is hosted on GitHub Pages. We do not install advertising,
+        analytics or third-party tracking scripts. A language preference may be
+        stored locally in your browser; no advertising cookies are set by our
+        website. GitHub processes connection information, including IP
+        addresses, under its
+        <a
+          href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+          >privacy statement</a
+        >. Clearing browser storage removes the language preference.
+      </p>
+      <p>
+        La web se aloja en GitHub Pages, sin scripts de publicidad, analítica ni
+        rastreo de terceros. El idioma puede guardarse localmente en tu
+        navegador. GitHub procesa información de conexión según su propia
+        política.
+      </p>
+      <h2>3. License redemption / Canje de licencias</h2>
+      <p>
+        We use Supabase in the São Paulo region to store a SHA-256 hash of your
+        code, batch reference, normalized email address, random license
+        identifier, redemption time and revocation status. We need these to
+        fulfill a license, recover it using the same code and email, prevent
+        repeat redemption and handle refunds or abuse. We do not store the
+        plaintext purchase code in the database. Your license file includes your
+        email and must be kept private.
+      </p>
+      <p>
+        Usamos Supabase en la región de São Paulo para guardar la huella SHA-256
+        del código, lote, correo normalizado, identificador de licencia, fecha
+        de canje y estado de revocación. Estos datos permiten entregar y
+        recuperar la licencia, evitar duplicados y gestionar reembolsos o abuso.
+        El archivo de licencia incluye tu correo y debes mantenerlo privado.
+      </p>
+      <p>
+        For abuse prevention, the service stores a salted hash of the connection
+        IP and an attempt count. We do not deliberately log emails, codes or raw
+        IP addresses in our function code, but infrastructure providers may
+        maintain technical logs. A daily maintenance job removes rate-limit
+        records older than 24 hours (up to 48 hours between runs). No
+        email verification is performed: knowledge of the code is the possession
+        proof, so do not share it.
+      </p>
+      <h2>4. Purposes, legal basis and retention / Finalidad y conservación</h2>
+      <p>
+        License fulfillment is necessary to perform the purchase agreement;
+        security and fraud prevention are legitimate operational interests,
+        where applicable law permits. License records are retained while needed
+        to provide lifetime-license fulfillment and for applicable legal
+        obligations; we do not promise an arbitrary deletion period that would
+        prevent recovery. Support messages are retained only as long as needed
+        for the request and applicable legal requirements. Ask us for access,
+        correction, deletion or export of your license/support records, or to
+        object to processing where applicable. We may need to verify your
+        identity; deletion of fulfillment records can prevent license recovery.
+        We will explain any legal reason that prevents deletion.
+      </p>
+      <p>
+        El canje permite cumplir la compra y prevenir fraude. Conservamos los
+        registros necesarios para la licencia y obligaciones legales. Puedes
+        solicitar acceso, corrección, eliminación o exportación mediante el
+        correo de soporte; podemos necesitar verificar tu identidad y la
+        eliminación puede impedir recuperar la licencia.
+      </p>
+      <h2>5. Optional external services / Servicios opcionales</h2>
+      <p>
+        Remote AI receives only the text you explicitly authorize and uses your
+        provider account. Whisper.cpp processes audio locally after its initial
+        download. Google Drive receives the SOPs, metadata and attachments you
+        approve for personal manual sync or backups; ordinary Drive sync is not
+        end-to-end encrypted by SOPBuilder. These providers have their own terms
+        and privacy policies. Public Google OAuth configuration and verification
+        are still prerequisites, not a completed product certification.
+      </p>
+      <p>
+        La IA remota recibe el texto que autorizas y usa tu cuenta del
+        proveedor. Whisper procesa audio localmente. Drive recibe el contenido
+        de las operaciones que confirmas; la sincronización ordinaria no añade
+        cifrado de extremo a extremo.
+      </p>
+      <h2>6. Transfers, rights and security / Derechos y seguridad</h2>
+      <p>
+        GitHub, Supabase and services you choose may process data
+        internationally under their contractual and privacy safeguards. See
+        <a href="https://supabase.com/privacy">Supabase privacy</a> and the
+        relevant service's policies. We restrict database access to the server
+        and keep signing keys out of the public website. No system is guaranteed
+        immune from breaches. If an incident affects your information, we will
+        take appropriate steps and notify affected people or authorities when
+        required by law. You can contact your competent data protection
+        authority if you believe your rights were not respected.
+      </p>
+      <h2>7. Updates / Cambios</h2>
+      <p>
+        Material changes will be published on this page with an updated
+        effective date. Contact support before sending sensitive records,
+        passwords, codes or license files.
+      </p>
+      <p>
+        Publicaremos los cambios importantes aquí con su fecha. No envíes
+        documentos sensibles, contraseñas ni códigos en canales públicos.
+      </p>
+    </main>
+    <footer class="footer">
+      <div class="container footer-links">
+        <a href="./">Home / Inicio</a><a href="terms.html">Terms / Términos</a
+        ><a href="guide.html">Guide / Guía</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /SOPBuilder-Web/activate-sop-a9e62d71/
+
+Sitemap: https://fguzman-stack.github.io/SOPBuilder-Web/sitemap.xml

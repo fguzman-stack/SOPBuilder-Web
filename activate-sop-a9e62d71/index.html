@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Redeem your SOPBuilder code</title>
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; connect-src https://bpxwzslftjzzokgmrrzj.supabase.co; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/redeem.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="../"
+          ><img
+            src="../assets/icon.png"
+            alt=""
+            width="40"
+            height="40"
+          />SOPBuilder</a
+        ><a href="mailto:familiazv2016@gmail.com">Support / Soporte</a>
+      </div>
+    </header>
+    <main class="redeem-shell">
+      <section class="redeem-card">
+        <p class="eyebrow">APPSUMO / REDEMPTION</p>
+        <h1>Your code. Your workspace.<br />Tu código. Tu espacio.</h1>
+        <p>
+          Enter your code and purchase email to receive a signed personal
+          license. No account or password is created; keep your code and license
+          private.
+        </p>
+        <p>
+          Introduce tu código y correo de compra para recibir una licencia
+          personal firmada. No se crea una cuenta ni contraseña; conserva el
+          código y la licencia en privado.
+        </p>
+        <form id="redeem-form">
+          <label for="email">Purchase email / Correo de compra</label
+          ><input
+            id="email"
+            type="email"
+            required
+            maxlength="254"
+            autocomplete="email"
+          /><label for="code">AppSumo code / Código AppSumo</label
+          ><input
+            id="code"
+            type="text"
+            required
+            minlength="36"
+            maxlength="36"
+            pattern="[Ss][Oo][Pp]-[A-Fa-f0-9]{32}"
+            autocomplete="off"
+            autocapitalize="characters"
+            spellcheck="false"
+            placeholder="SOP-…"
+          /><label class="check-label"
+            ><input id="terms" type="checkbox" required /><span
+              >I accept the
+              <a href="../terms.html" target="_blank" rel="noopener"
+                >personal license terms</a
+              >
+              and have read the
+              <a href="../privacy.html" target="_blank" rel="noopener"
+                >privacy policy</a
+              >. / Acepto los términos de licencia personal y he leído la
+              política de privacidad.</span
+            ></label
+          ><button id="submit" class="btn" type="submit">
+            Redeem code / Canjear código
+          </button>
+        </form>
+        <div
+          id="message"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+        ></div>
+        <section id="success" hidden>
+          <h2>You're ready / Todo listo</h2>
+          <ol>
+            <li>Save the .soplicense file. / Guarda el archivo .soplicense.</li>
+            <li>
+              Download and install SOPBuilder for Windows. / Descarga e instala
+              SOPBuilder para Windows.
+            </li>
+            <li>
+              Open the app and choose “Import license”. / Abre la app y elige
+              «Importar licencia».
+            </li>
+          </ol>
+          <button id="save-license" class="btn">
+            Save license / Guardar licencia
+          </button>
+          <p>
+            <a
+              href="https://github.com/fguzman-stack/SOPBuilder-Web/releases/latest"
+              target="_blank"
+              rel="noopener"
+              >Windows downloads and SHA-256 checksums ↗</a
+            >
+          </p>
+          <p>
+            The executable is not Authenticode-signed. / El ejecutable no tiene
+            firma Authenticode.
+          </p>
+        </section>
+        <p>
+          A code belongs to one personal license and cannot be stacked. Repeat
+          redemption with the same code and email recovers the same license.
+          Email ownership is not verified: the purchase code is your proof of
+          possession.
+        </p>
+        <p>
+          Un código corresponde a una licencia personal, sin apilado. Canjearlo
+          otra vez con el mismo correo recupera la licencia. No verificamos que
+          el correo te pertenezca: el código es la prueba de posesión.
+        </p>
+        <noscript
+          ><p>
+            JavaScript is required to redeem securely. / Necesitas JavaScript
+            para el canje seguro.
+          </p></noscript
+        >
+      </section>
+    </main>
+  </body>
+</html>
