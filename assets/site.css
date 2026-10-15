@@ -1,9 +1,11 @@
 @font-face {
   font-family: Jakarta;
   src: url("./jakarta-latin.woff2") format("woff2");
-  font-weight: 100 900;
+  font-weight: 400;
   font-display: swap;
 }
+@font-face { font-family: Jakarta; src:url('./jakarta-latin-600.woff2') format('woff2'); font-weight:500 600; font-display:swap; }
+@font-face { font-family: Jakarta; src:url('./jakarta-latin-700.woff2') format('woff2'); font-weight:700 900; font-display:swap; }
 :root {
   --cream: #fff8f0;
   --paper: #fffdf9;
