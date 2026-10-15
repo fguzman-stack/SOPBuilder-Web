@@ -23,6 +23,39 @@
 * {
   box-sizing: border-box;
 }
+/* Keep a quiet, rounded scrollbar without replacing native scrolling. */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f5ece3;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b17d65;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  min-height: 40px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #925b45;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--rust);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+@supports not selector(::-webkit-scrollbar) {
+  * { scrollbar-width: thin; scrollbar-color: #b17d65 #f5ece3; }
+}
+@media (forced-colors: active) {
+  * { scrollbar-color: auto; }
+  ::-webkit-scrollbar-track { background: Canvas; }
+  ::-webkit-scrollbar-thumb { background-color: CanvasText; }
+}
 body {
   margin: 0;
 }
@@ -245,6 +278,9 @@ p a, .check-label a { text-decoration: underline; text-underline-offset: 3px; }
   box-shadow: 0 25px 60px #6d453b15;
 }
 .shot-wrap img {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   display: block;
   width: 100%;
   border-radius: 12px 12px 0;
@@ -374,6 +410,9 @@ h2 {
 }
 .gallery img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   border: 1px solid var(--line);
   border-radius: 16px;
   display: block;
@@ -608,6 +647,9 @@ input[type="checkbox"] {
   background: #191714bf;
 }
 .lightbox img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
   max-width: 90vw;
   max-height: 80vh;
   display: block;
